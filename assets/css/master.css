@@ -33,12 +33,14 @@ header {
 nav.sidebar {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 250px;
   background-color: black;
   height: 100%;
+  align-content: flex-start;
 }
 
 .logo {
@@ -51,14 +53,10 @@ img {
   align-self: center;
 }
 
-ul{
-  display: flex;
-  margin-bottom: 200px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  color: #fff;
-}
 
+ul.sidebar-home {
+  color: #ffff;
+}
 
 
 
@@ -81,10 +79,6 @@ main nav {
   margin-left: 300px;
 }
 
-main nav ul li {
-  display: inline-block;
-
-}
 
 footer {
    overflow-y: hidden;
