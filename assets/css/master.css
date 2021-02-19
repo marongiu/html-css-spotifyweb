@@ -11,7 +11,7 @@ header {
   display: flex;
   height: 100px;
   width: 100%;
-  background-color: blue;
+  background-color: #080b12;
 }
 
 .item-right{
@@ -19,28 +19,59 @@ header {
   width: 100%;
   flex-direction: row-reverse;
   align-items: center;
+  padding-right: 10px;
 }
 
-header nav {
+.item-right a {
+  padding: 10px;
+  color: #ffff;
+  border: 1px solid #ffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+nav.sidebar {
+  display: flex;
+  flex-wrap: wrap;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  width: 13%;
+  width: 250px;
   background-color: black;
   height: 100%;
-
 }
 
-.logo img {
-  width: 180px;
+.logo {
+  height: 100px;
+  display: flex;
 }
+
+img {
+  height: 50px;
+  align-self: center;
+}
+
+ul{
+  display: flex;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 main {
   height: 100vh;
-  background-color: yellow;
+  background-color: #141922;
 }
 
 main nav {
@@ -56,11 +87,11 @@ main nav ul li {
 }
 
 footer {
+   overflow-y: hidden;
   position: fixed;
   bottom: 0;
   right: 0;
   width: 100%;
   height: 100px;
-  background-color: grey;
-   overflow-y: hidden;
+  background-color: #282828;
 }
