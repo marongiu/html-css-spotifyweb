@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -31,21 +32,22 @@ header {
 }
 
 nav.sidebar {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
   width: 250px;
-  background-color: black;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-content: flex-start;
+  background-color: black;
 }
 
+/* Logo */
 .logo {
-  height: 100px;
   display: flex;
+  height: 100px;
 }
 
 img {
@@ -53,19 +55,58 @@ img {
   align-self: center;
 }
 
-
-ul.sidebar-home {
-  color: #ffff;
+/* Sidebar */
+ul.sidebar-home, ul.music-list {
+  color: #a3a3a3;
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
+ul.sidebar-home li, ul.playlist li {
+  padding-top: 10px;
+}
 
+ul.sidebar-home li a, ul.playlist li a, ul.music-list li a {
+  text-decoration: none;
+  color: #a3a3a3;
+}
 
+ul.sidebar-home li i, ul.playlist li i {
+  padding-right: 5px;
+}
 
+/* Sidebar lista playlist */
 
+ul.playlist {
+  margin-top: 20px;
+  color: #a3a3a3;
+  list-style: none;
+  padding-left: 10px;
+}
 
+.plus {
+  border-radius: none;
+  font-size: 40px;
+  vertical-align: middle;
+}
 
+ul.playlist li {
+  vertical-align: middle;
+}
 
+ul.playlist li:first-child {
+  color: #ffff;
+  font-weight: bold;
+}
 
+/* Lista musica */
+
+ul.music-list li {
+  margin-top: 10px;
+}
+
+/* Inizio main */
 
 main {
   height: 100vh;
