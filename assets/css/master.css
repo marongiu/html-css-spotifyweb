@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: #080b12;
+  height: 100px;
+  color: #fff;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+span {
+  padding-right: 10px;
+}
+
+
+main {
+  background-color: blue;
+  height: calc(100vh -100px -100px);
+}
