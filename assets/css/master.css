@@ -10,7 +10,10 @@ header {
   right: 0;
   height: 100px;
   width: calc(100vw - 250px);
-  background-color: blue;
+  background-color: rgba(8, 11, 18, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 main {
@@ -28,6 +31,9 @@ aside {
   width: 250px;
   height: 100%;
   background-color: black;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -36,27 +42,40 @@ aside {
   overflow-y: auto;
 }
 
-p {
-  height: 300px;
+
+/* Utility */
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+/* Navbar right */
+nav.right a {
+  margin-right: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffff;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 /* logo */
+.logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
 
 .logo img {
-  width: 200px;
+  width: 150px;
 }
 
 /* Sidebar */
 ul.sidebar-home, ul.music-list {
   color: #a3a3a3;
   list-style: none;
-  padding-left: 10px;
-  padding-top: 10px;
 }
 
-ul.sidebar-home li, ul.playlist li {
-  padding-top: 10px;
-}
 
 ul.sidebar-home li a, ul.playlist li a, ul.music-list li a {
   text-decoration: none;
@@ -69,11 +88,14 @@ ul.sidebar-home li i, ul.playlist li i {
 
 /* Sidebar lista playlist */
 
+.list-command {
+  height: 70%;
+}
+
 ul.playlist {
   margin-top: 20px;
   color: #a3a3a3;
   list-style: none;
-  padding-left: 10px;
 }
 
 .plus {
@@ -97,7 +119,31 @@ ul.music-list li {
   margin-top: 20px;
 }
 
+/* Utente */
 
+.user {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 30%;
+  color: #595959;
+  padding-bottom: 10px;
+}
 
+.user ul {
+  list-style: none;
+}
 
-.
+.user ul li i {
+  padding-right: 10px;
+}
+
+.user ul li a {
+  text-decoration: none;
+  color: #595959;
+}
+
+a#name-user {
+  color: #ffff;
+  font-weight: bold;
+}
