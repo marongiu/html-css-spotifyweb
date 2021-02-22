@@ -202,7 +202,7 @@ ul.list-title a {
 
 .card {
   width: 200px;
-  height: 100px;
+  height: 200px;
   margin: 0 10px;
   background-color: yellow;
 }
@@ -210,3 +210,11 @@ ul.list-title a {
 .prova {
   height: 900px;
 }
+
+/* Sezione popular */
+
+.circle{
+  border-radius: 100%;
+}
+
+/* Footer */
