@@ -13,9 +13,9 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100px;
+  height: 80px;
   width: calc(100vw - 250px);
-  background-color: rgba(8, 11, 18, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -41,11 +41,12 @@ aside {
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  overflow: hidden;
 }
 
 
 .app {
-  padding-top: 130px;
+  padding-top: 110px;
   width: calc(100vw - 250px);
   overflow-y: auto;
 }
@@ -67,7 +68,7 @@ aside {
 
 /* Navbar right */
 nav.right a {
-  margin-right: 10px;
+  margin-right: 25px;
   padding: 10px;
   text-decoration: none;
   color: #ffff;
@@ -192,10 +193,17 @@ ul.list-title a {
   display: flex;
 }
 
+/* Spotify track immagini */
+
+.spotify-track h3, .spotify-track p{
+  text-align: center;
+  padding-top: 8px;
+}
+
 .card {
-  width: 100%;
+  width: 200px;
+  height: 100px;
   margin: 0 10px;
-  height: 200px;
   background-color: yellow;
 }
 
