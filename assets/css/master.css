@@ -66,14 +66,26 @@ aside {
   color: #ffff;
 }
 
+.grey {
+  color: #4c4c4c;
+}
+.app p {
+  color: #6a6d72;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
 /* Navbar right */
 nav.right a {
-  margin-right: 25px;
-  padding: 10px;
   text-decoration: none;
   color: #ffff;
+}
+
+nav.right {
   border: 1px solid #fff;
   border-radius: 20px;
+  margin-right: 25px;
+  padding: 10px 30px;
 }
 
 /* logo */
@@ -218,3 +230,28 @@ ul.list-title a {
 }
 
 /* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.command-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-track {
+  padding-left: 10px;
+}
+
+#icon {
+  font-size: 15px;
+  margin-left: 75px;
+}
+
+#icon a {
+  color: #767676;
+}
