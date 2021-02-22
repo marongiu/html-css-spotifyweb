@@ -238,7 +238,7 @@ footer {
   font-size: 12px;
 }
 
-.command-left, .command-center, .command-right {
+.command-left, .command, .command-right {
   width: calc(100% / 3);
 }
 
@@ -260,23 +260,46 @@ footer {
   color: #767676;
 }
 
-.command-center {
+.command-center, .range {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.command-center ul li {
+.command-center  li {
   display: inline-block;
   list-style: none;
   padding: 0 10px;
 }
 
-.command-center ul li a{
+.command-center  li a{
   color: #ffff;
   text-decoration: none;
   font-size: 22px;
 }
 
 .range {
-  display: block;
+  color: #c1c1c1;
+  justify-content: space-around;
+}
+
+.range input {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.command-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.command-right ul li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.command-right ul li a {
+  color: #c1c1c1;
 }
