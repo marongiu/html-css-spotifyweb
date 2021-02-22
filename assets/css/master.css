@@ -238,7 +238,11 @@ footer {
   font-size: 12px;
 }
 
-.command-right {
+.command-left, .command-center, .command-right {
+  width: calc(100% / 3);
+}
+
+.command-left {
   display: flex;
   align-items: center;
 }
@@ -248,10 +252,31 @@ footer {
 }
 
 #icon {
+  padding-left: 80px;
   font-size: 15px;
-  margin-left: 75px;
 }
 
 #icon a {
   color: #767676;
+}
+
+.command-center {
+  display: flex;
+  justify-content: center;
+}
+
+.command-center ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.command-center ul li a{
+  color: #ffff;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.range {
+  display: block;
 }
