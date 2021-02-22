@@ -45,7 +45,7 @@ aside {
 
 
 .app {
-  margin-top: 130px;
+  padding-top: 130px;
   width: calc(100vw - 250px);
   overflow-y: auto;
 }
@@ -55,6 +55,14 @@ aside {
 
 .mt-10 {
   margin-top: 10px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.white {
+  color: #ffff;
 }
 
 /* Navbar right */
@@ -171,4 +179,26 @@ ul.list-title li {
 ul.list-title a {
   text-decoration: none;
   color: #676a6f;
+}
+
+/* Play */
+
+.container-pl {
+  padding: 0 20px;
+}
+
+.container-card {
+  margin-top: 40px;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  margin: 0 10px;
+  height: 200px;
+  background-color: yellow;
+}
+
+.prova {
+  height: 900px;
 }
