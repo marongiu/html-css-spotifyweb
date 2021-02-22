@@ -213,19 +213,18 @@ ul.list-title a {
 }
 
 .card {
-  width: 200px;
-  height: 200px;
   margin: 0 10px;
-  background-color: yellow;
 }
 
-.prova {
-  height: 900px;
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Sezione popular */
 
-.circle{
+.circle img {
+
   border-radius: 100%;
 }
 
