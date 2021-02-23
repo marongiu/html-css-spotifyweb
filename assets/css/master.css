@@ -75,6 +75,7 @@ aside {
   font-size: 15px;
 }
 
+/* Mobile version */
 .logo img#mobile {
   display: none;
 }
@@ -222,7 +223,8 @@ ul.list-title a {
 }
 
 .spotify-track {
-  max-width: 250px;
+  width: calc(100% / 6);
+  max-width: 240px;
 }
 .card img {
   width: 100%;
@@ -316,23 +318,57 @@ footer {
 }
 
 /* Media */
-/* Large */
-@media all and (min-width: 768px){
-  .spotify-track {
-    width: calc(100% / 4 - 10px);
+/* TODO: Media query aggiustamento sotto desktop footer i */
+
+@media all and (max-width: 992px) {
+  footer i {
+    font-size: 15px;
   }
 
-  .card img{
-    width: 100%;
+  .command-left {
+    width: 30%;
+  }
+
+  .command {
+    width: 40%;
+  }
+
+  .command-right {
+    width: 30%;
+  }
+
+  .command-right input, .range input {
+    width: 40%;
+  }
+
+  main ul.list-title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #icon {
+    padding: 0;
+  }
+
+  main ul.list-title li {
+    padding-top: 10px;
+  }
+
+}
+
+/* Tablet */
+@media all and (min-width: 769px) and (max-width: 992px){
+  .spotify-track {
+    width: calc(100% / 4 );
   }
 }
+
 /* Small version */
-@media all and (min-width: 576px) {
+@media all and (min-width: 576px) and (max-width: 768px){
 
   .spotify-track {
     width: calc(100% / 2 - 10px);
   }
-
 }
 
 /* XS VERSION */
@@ -354,42 +390,30 @@ footer {
     width: calc(100vw - 50px);
   }
 
-  .command-left {
-    width: 25%;
-  }
-
-  .command {
-    width: 50%;
-  }
-
-  .command-right {
-    width: 25%;
-  }
-
-  #icon {
-    padding: 0;
-  }
-
-  footer i{
-    font-size: 15px;
-  }
-
-.command-right input, .range input {
-    width: 50%;
-  }
-
   aside ul {
+    display: none;
+    color: #ffff;
+  }
+
+  aside ul.sidebar-home {
+    display: block;
+    font-size: 20px;
+  }
+
+  aside ul.sidebar-home li a {
     display: none;
   }
 
-  main ul {
-    text-align: center;
-    font-size: 12px;
+  aside .user ul {
+    display: block;
+    font-size: 20px;
   }
 
-  main ul.list-title li {
-    padding-top: 10px;
+  aside .user ul li a{
+    display: none;
   }
+
+
 
   .logo img {
     display: none;
