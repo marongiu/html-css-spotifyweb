@@ -420,7 +420,9 @@ ul.command-center li i {
     font-size: 14px;
   }
 
+
   .command-left, .command, .command-right {
+    width: calc(100% / 3 - 10px);
     margin: 0 10px;
   }
 
@@ -435,10 +437,6 @@ ul.command-center li i {
   main ul.list-title {
     text-align: center;
     font-size: 16px;
-  }
-
-  #icon {
-    padding: 0;
   }
 
   main ul.list-title li {
@@ -523,5 +521,9 @@ ul.command-center li i {
 
   .command-center li {
     padding: 0 5px;
+  }
+
+  #icon {
+    display: none;
   }
 }
