@@ -201,8 +201,9 @@ ul.list-title a {
 }
 
 .container-card {
-  margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 /* Spotify track immagini */
@@ -212,14 +213,13 @@ ul.list-title a {
   padding-top: 8px;
 }
 
-.spotify-track {
-  width: calc(100% /6);
-}
-
 .card, .container-pl h2, .container-pl p {
   margin: 5px 10px;
 }
 
+.spotify-track {
+  max-width: 250px;
+}
 .card img {
   width: 100%;
   height: 100%;
@@ -309,4 +309,24 @@ footer {
 
 .command-right input {
   width: 15%;
+}
+
+/* Media */
+/* Large */
+@media all and (min-width: 768px){
+  .spotify-track {
+    width: calc(100% / 4 - 10px);
+  }
+
+  .card img{
+    width: 100%;
+  }
+}
+/* Small version */
+@media all and (min-width: 576px) {
+
+  .spotify-track {
+    width: calc(100% / 2 - 10px);
+  }
+
 }
