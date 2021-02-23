@@ -80,6 +80,29 @@ aside {
   display: none;
 }
 
+/* Hover */
+
+aside ul li a:hover, aside ul li i:hover {
+  color: #fff;
+}
+
+main ul.list-title li a:hover {
+  color: #ffff;
+}
+
+header nav.right:hover {
+  transform:scale(1.2);
+}
+
+footer i:hover {
+  color: #fff;
+}
+
+footer .user-track p:hover {
+  color: #ffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
 /* Navbar right */
 nav.right a {
   text-decoration: none;
