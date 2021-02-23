@@ -44,13 +44,11 @@ aside {
   overflow: hidden;
 }
 
-
 .app {
   padding-top: 110px;
   width: calc(100vw - 250px);
   overflow-y: auto;
 }
-
 
 /* Utility */
 
@@ -69,6 +67,7 @@ aside {
 .grey {
   color: #4c4c4c;
 }
+
 .app p {
   color: #6a6d72;
   margin-top: 10px;
@@ -104,6 +103,25 @@ footer .user-track p:hover {
   cursor: pointer;
 }
 
+
+.card:hover .overlay {
+  display: block;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  display: none;
+  cursor: pointer;
+}
+
 /* Navbar right */
 nav.right a {
   text-decoration: none;
@@ -129,11 +147,15 @@ nav.right {
 }
 
 /* Sidebar */
+
+ul.sidebar-home li i {
+  font-size: 20px;
+}
+
 ul.sidebar-home, ul.music-list {
   color: #a3a3a3;
   list-style: none;
 }
-
 
 ul.sidebar-home li a, ul.playlist li a, ul.music-list li a {
   text-decoration: none;
@@ -144,6 +166,18 @@ ul.sidebar-home li i, ul.playlist li i {
   padding-right: 5px;
 }
 
+ul.sidebar-home li.border {
+  position: relative;
+}
+
+.green {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  border-left: 3px solid #adff2f;
+  width: 10px;
+  height: 20px;
+}
 /* Sidebar lista playlist */
 
 .list-command {
@@ -223,6 +257,22 @@ ul.list-title a {
   color: #676a6f;
 }
 
+ul.list-title li.text-center {
+  position: relative;
+}
+
+.list-title hr {
+  position: absolute;
+  top: 110%;
+  left: 40%;
+  width: 50px;
+  height: 3px;
+  color: #adff2f;
+  background-color: #adff2f;
+  border-radius: 2px;
+}
+
+
 /* Play */
 
 .container-pl {
@@ -250,6 +300,11 @@ ul.list-title a {
   width: calc(100% / 6);
   max-width: 240px;
 }
+
+.card {
+  position: relative;
+}
+
 .card img {
   width: 100%;
   height: 100%;
@@ -311,14 +366,22 @@ footer {
   font-size: 22px;
 }
 
+ul.command-center li#play i {
+  font-size: 40px;
+}
+
+ul.command-center li i {
+  font-size: 20px;
+}
+
 .range {
   color: #c1c1c1;
   justify-content: space-around;
 }
 
 .range input {
-  margin-top: 10px;
   width: 80%;
+  padding-top: 5px;
 }
 
 .command-right {
@@ -345,8 +408,12 @@ footer {
 /* TODO: Media query aggiustamento sotto desktop footer i */
 
 @media all and (max-width: 992px) {
-  footer i {
-    font-size: 15px;
+  ul.command-center li#play i {
+    font-size: 23px;
+  }
+
+  ul.command-center li i {
+    font-size: 14px;
   }
 
   .command-left {
@@ -437,8 +504,6 @@ footer {
     display: none;
   }
 
-
-
   .logo img {
     display: none;
   }
@@ -452,5 +517,7 @@ footer {
     display: block;
   }
 
-
+  .green {
+    display: none;
+  }
 }
