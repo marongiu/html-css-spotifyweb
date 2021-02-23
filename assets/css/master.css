@@ -212,8 +212,12 @@ ul.list-title a {
   padding-top: 8px;
 }
 
-.card {
-  margin: 0 10px;
+.spotify-track {
+  width: calc(100% /6);
+}
+
+.card, .container-pl h2, .container-pl p {
+  margin: 5px 10px;
 }
 
 .card img {
@@ -301,4 +305,8 @@ footer {
 
 .command-right ul li a {
   color: #c1c1c1;
+}
+
+.command-right input {
+  width: 15%;
 }
