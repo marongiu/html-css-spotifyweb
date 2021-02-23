@@ -109,7 +109,7 @@ footer .user-track p:hover {
 }
 
 .card:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .overlay {
@@ -420,20 +420,16 @@ ul.command-center li i {
     font-size: 14px;
   }
 
-  .command-left {
-    width: 30%;
+  .command-left, .command, .command-right {
+    margin: 0 10px;
   }
 
-  .command {
+  .range input {
     width: 40%;
   }
 
-  .command-right {
+  .command-right input {
     width: 30%;
-  }
-
-  .command-right input, .range input {
-    width: 40%;
   }
 
   main ul.list-title {
@@ -523,5 +519,9 @@ ul.command-center li i {
 
   .green {
     display: none;
+  }
+
+  .command-center li {
+    padding: 0 5px;
   }
 }
