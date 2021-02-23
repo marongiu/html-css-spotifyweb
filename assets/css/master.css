@@ -382,6 +382,15 @@ footer {
     display: none;
   }
 
+  main ul {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  main ul.list-title li {
+    padding-top: 10px;
+  }
+
   .logo img {
     display: none;
   }
@@ -394,8 +403,6 @@ footer {
     width: 100px;
     display: block;
   }
-
-
 
 
 }
