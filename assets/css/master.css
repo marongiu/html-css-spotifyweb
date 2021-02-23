@@ -75,6 +75,10 @@ aside {
   font-size: 15px;
 }
 
+.logo img#mobile {
+  display: none;
+}
+
 /* Navbar right */
 nav.right a {
   text-decoration: none;
@@ -328,5 +332,70 @@ footer {
   .spotify-track {
     width: calc(100% / 2 - 10px);
   }
+
+}
+
+/* XS VERSION */
+
+@media all and (max-width: 575px) {
+  aside {
+    width: 50px;
+  }
+
+  header {
+    width: calc(100vw - 50px);
+  }
+
+  .spotify-track {
+    width: calc(100%/2);
+  }
+
+  .app {
+    width: calc(100vw - 50px);
+  }
+
+  .command-left {
+    width: 25%;
+  }
+
+  .command {
+    width: 50%;
+  }
+
+  .command-right {
+    width: 25%;
+  }
+
+  #icon {
+    padding: 0;
+  }
+
+  footer i{
+    font-size: 15px;
+  }
+
+.command-right input, .range input {
+    width: 50%;
+  }
+
+  aside ul {
+    display: none;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .logo img#mobile {
+    width: 100px;
+    display: block;
+  }
+
+
+
 
 }
