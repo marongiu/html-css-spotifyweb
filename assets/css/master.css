@@ -446,6 +446,22 @@ input::-webkit-slider-thumb {
   cursor: pointer;
 }
 
+/* Firefox */
+
+input::-moz-range-thumb {
+  background-color: #1DB954;
+  border: none;
+}
+
+
+input::-moz-range-progress {
+  background-color: #1DB954;
+  height: 10px;
+  border-radius: 10px;
+}
+
+
+
 
 /* Media */
 /* TODO: Media query aggiustamento sotto desktop footer i */
@@ -482,6 +498,10 @@ input::-webkit-slider-thumb {
   .spotify-track {
     width: calc(100% / 4 );
   }
+
+  #icon {
+    padding: 0 15px;
+  }
 }
 
 /* Small version */
@@ -489,6 +509,10 @@ input::-webkit-slider-thumb {
 
   .spotify-track {
     width: calc(100% / 2 - 10px);
+  }
+
+  #icon {
+    padding: 0 5px;
   }
 }
 
