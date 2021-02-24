@@ -404,6 +404,7 @@ ul.command-center li i {
 
 .command-right input {
   width: 15%;
+  min-width: 65px;
 }
 
 /* RANGE INPUT */
