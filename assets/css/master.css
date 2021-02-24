@@ -410,9 +410,9 @@ ul.command-center li i {
 /* RANGE INPUT */
 
 .range input{
-  margin: 0 5px;
+  margin: 0px 5px;
   width: 100%;
-  height: 5px;
+  height: 6px;
   -webkit-appearance: none;
   background-color: #535353;
   outline: none;
@@ -421,7 +421,7 @@ ul.command-center li i {
 
 .command-right input {
   width: 15%;
-  height: 5px;
+  height: 6px;
   -webkit-appearance: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   background-color: #535353;
@@ -437,9 +437,14 @@ input:hover::-webkit-slider-runnable-track {
   display: block;
 }
 
-
-
-
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #1DB954;
+  cursor: pointer;
+}
 
 
 /* Media */
