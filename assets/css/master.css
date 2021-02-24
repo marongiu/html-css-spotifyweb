@@ -431,6 +431,7 @@ ul.command-center li i {
 
 /* Chrome */
 
+/* BUG:  */
 input::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   color: #13bba4;
@@ -440,7 +441,6 @@ input::-webkit-slider-runnable-track {
 input:hover::-webkit-slider-runnable-track {
   display: block;
 }
-
 
 input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -520,6 +520,10 @@ input::-moz-range-progress {
   }
 
   #icon {
+    padding: 0 5px;
+  }
+
+  .command-right ul li {
     padding: 0 5px;
   }
 }
