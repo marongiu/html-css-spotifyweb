@@ -430,33 +430,43 @@ ul.command-center li i {
 }
 
 /* Chrome */
+
 input::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  color: #13bba4;
   display: none;
 }
-
+/* Hover chrome */
 input:hover::-webkit-slider-runnable-track {
   display: block;
 }
+
 
 input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #1DB954;
+  background-color: #c1c1c1;
   cursor: pointer;
 }
+
 
 /* Firefox */
 
 input::-moz-range-thumb {
-  background-color: #1DB954;
+  background-color: #c1c1c1;
   border: none;
+  visibility: hidden;
+}
+
+input:hover::-moz-range-thumb {
+  visibility: visible;
 }
 
 input::-moz-range-progress {
-  background-color: #1DB954;
-  height: 10px;
+  background-color: #c1c1c1;
+  height: 6px;
   border-radius: 10px;
 }
 
